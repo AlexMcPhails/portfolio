@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, inital-scale=1.0">
+        <title>Contact Form</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">          
+        <h3>McPhails Furniture Warranty Enquiries</h3>
+            <p>Please fill out all details to support your warranty enquiry</p>
+              <form action="mail.php" method="post">
+                 <form action="/action_page.php">         
+                 <label for="fname">First Name</label>
+                 <input type="text" id="fname" name="firstname" placeholder="First Name.."required>
+                 <form action="/action_page.php">
+                 <label for="same">Surname</label>
+                  <input type="text" id="sname" name="lastname" placeholder="Surname.."required>
+                  <form action="/action_page.php">
+                  <label for="phnumber">Phone Number</label>
+                  <input type="text" id="phnumber" name="phonenumber" placeholder="Phone Number.."required>
+                  <form action="/action_page.php">
+                  <label for="email">Email Address</label>
+                  <input type="text" id="email" name="email" placeholder="Email Address.."required>
+                  <form action="/action_page.php">
+                  <label for="invnumber">Invoice Number</label>
+                  <input type="text" id="invnumber" name="invnumber" placeholder="Invoice Number.."required>
+                  <textarea id="Comments" rows="7" cols="100" placeholder="Please describe your warranty claim in this section."required></textarea>      
+        
+                  <div class="container">
+        <form action="/action_page.php">
+          <input type="file" id="myFile" name="filename">
+          <button type="submit">Submit</button>
+          <input type="hidden" name="_next" value="%%GLOBAL_ShopPathSSL%%">
+        </form>
+      </div>
+    </body>
+    </html>
